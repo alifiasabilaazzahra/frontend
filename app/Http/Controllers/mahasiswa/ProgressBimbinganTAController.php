@@ -14,19 +14,25 @@ class ProgressBimbinganTAController extends Controller
     {
         $title = "Tugas Akhir";
         $menu = 1;
-        return view('mahasiswa/ta-progress-bimbingan/index',compact('title','menu'));
+        $side_menu = 5;
+        $section = "TA";
+        return view('mahasiswa/ta-progress-bimbingan/index',compact('title','menu','section','side_menu'));
     }
 
     public function dospem1(){
         $title = "Pembimbing 1";
         $menu = 2;
-        return view('mahasiswa/ta-progress-bimbingan/dospem',compact('title','menu'));
+        $side_menu = 5;
+        $section = "TA";
+        return view('mahasiswa/ta-progress-bimbingan/dospem',compact('title','menu','section','side_menu'));
     }
 
     public function dospem2(){
         $title = "Pembimbing 2";
         $menu = 3;
-        return view('mahasiswa/ta-progress-bimbingan/dospem',compact('title','menu'));
+        $side_menu = 5;
+        $section = "TA";
+        return view('mahasiswa/ta-progress-bimbingan/dospem',compact('title','menu','section','side_menu'));
     }
 
     public function add(){

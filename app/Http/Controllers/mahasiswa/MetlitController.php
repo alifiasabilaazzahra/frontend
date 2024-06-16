@@ -17,17 +17,23 @@ class MetlitController extends Controller
 
     public function pendataan(){
         $title = "Pendataan Metlit";
-        return view('mahasiswa/metlit/pendataan',compact('title'));
+        $section = "metlit";
+        $side_menu = 1;
+        return view('mahasiswa/metlit/pendataan',compact('title','section','side_menu'));
     }
 
     public function addPendataan(){
+        $section = "metlit";
+        $side_menu = 1;
         $title = "Tambah Pendataan";
-        return view('mahasiswa/metlit/add-pendataan',compact('title'));
+        return view('mahasiswa/metlit/add-pendataan',compact('title','section','side_menu'));
     }
 
     public function editPendataan(){
         $title = "Edit Pendataan";
-        return view('mahasiswa/metlit/edit-pendataan',compact('title'));
+        $section = "metlit";
+        $side_menu = 1;
+        return view('mahasiswa/metlit/edit-pendataan',compact('title','section','side_menu'));
     }
 
     /**

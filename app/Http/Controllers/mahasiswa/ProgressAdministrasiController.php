@@ -13,26 +13,34 @@ class ProgressAdministrasiController extends Controller
     public function index()
     {
         $title = "Progress Per BAB";
+        $side_menu = 3;
+        $section = "metlit";
         $menu = 1;
-        return view('mahasiswa/progress-admin/index',compact('title','menu'));
+        return view('mahasiswa/progress-admin/index',compact('title','menu','section','side_menu'));
     }
 
     public function dokumen(){
         $title = "Dokumen";
         $menu = 2;
-        return view('mahasiswa/progress-admin/dokumen',compact('title','menu'));
+        $side_menu = 3;
+        $section = "metlit";
+        return view('mahasiswa/progress-admin/dokumen',compact('title','menu','section','side_menu'));
     }
 
     public function tak(){
         $title = "TAK";
         $menu = 3;
-        return view('mahasiswa/progress-admin/tak',compact('title','menu'));
+        $side_menu = 3;
+        $section = "metlit";
+        return view('mahasiswa/progress-admin/tak',compact('title','menu','section','side_menu'));
     }
 
     public function eprt(){
         $title = "EPRT";
         $menu = 4;
-        return view('mahasiswa/progress-admin/eprt',compact('title','menu'));
+        $side_menu = 3;
+        $section = "metlit";
+        return view('mahasiswa/progress-admin/eprt',compact('title','menu','section','side_menu'));
     }
 
     public function add(){

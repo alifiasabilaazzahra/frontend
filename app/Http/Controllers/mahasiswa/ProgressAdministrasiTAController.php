@@ -13,26 +13,34 @@ class ProgressAdministrasiTAController extends Controller
     public function index()
     {
         $title = "Progress Per BAB";
+        $side_menu = 6;
+        $section = "TA";
         $menu = 1;
-        return view('mahasiswa/ta-progress-admin/index',compact('title','menu'));
+        return view('mahasiswa/ta-progress-admin/index',compact('title','menu','section','side_menu'));
     }
 
     public function dokumen(){
         $title = "Dokumen";
+        $side_menu = 6;
+        $section = "TA";
         $menu = 2;
-        return view('mahasiswa/ta-progress-admin/dokumen',compact('title','menu'));
+        return view('mahasiswa/ta-progress-admin/dokumen',compact('title','menu','section','side_menu'));
     }
 
     public function tak(){
         $title = "TAK";
+        $side_menu = 6;
+        $section = "TA";
         $menu = 3;
-        return view('mahasiswa/ta-progress-admin/tak',compact('title','menu'));
+        return view('mahasiswa/ta-progress-admin/tak',compact('title','menu','section','side_menu'));
     }
 
     public function eprt(){
         $title = "EPRT";
+        $side_menu = 6;
+        $section = "TA";
         $menu = 4;
-        return view('mahasiswa/ta-progress-admin/eprt',compact('title','menu'));
+        return view('mahasiswa/ta-progress-admin/eprt',compact('title','menu','section','side_menu'));
     }
 
     public function add(){

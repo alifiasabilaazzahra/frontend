@@ -11,8 +11,10 @@ class Dashboard extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        return view('mahasiswa/dashboard/index');
+    {   
+        $title = "Dashboard";
+        return view('mahasiswa/dashboard/index',compact('title'));
+       
     }
 
     /**

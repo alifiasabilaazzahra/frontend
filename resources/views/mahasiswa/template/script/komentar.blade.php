@@ -33,4 +33,7 @@
         }
         });
     });
+ $('.detail').on('click',function(){
+        $('#detailData').modal('toggle');
+    });
 </script>

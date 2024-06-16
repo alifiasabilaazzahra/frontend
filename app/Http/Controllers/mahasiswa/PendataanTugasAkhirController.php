@@ -16,18 +16,24 @@ class PendataanTugasAkhirController extends Controller
     }
 
     public function pendataan(){
+        $side_menu = 4;
+        $section = "TA";
         $title = "Pendataan Tugas Akhir";
-        return view('mahasiswa/ta-pendataan/pendataan',compact('title'));
+        return view('mahasiswa/ta-pendataan/pendataan',compact('title','side_menu','section'));
     }
 
     public function add(){
+        $side_menu = 4;
+        $section = "TA";
         $title = "Tambah Pendataan";
-        return view('mahasiswa/ta-pendataan/add-pendataan',compact('title'));
+        return view('mahasiswa/ta-pendataan/add-pendataan',compact('title','side_menu','section'));
     }
 
     public function edit(){
+        $side_menu = 4;
+        $section = "TA";
         $title = "Edit Pendataan";
-        return view('mahasiswa/ta-pendataan/edit-pendataan',compact('title'));
+        return view('mahasiswa/ta-pendataan/edit-pendataan',compact('title','side_menu','section'));
     }
 
     /**

@@ -22,6 +22,7 @@
         </div>
       </div>
     </div>
+  
     <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
       <div class="card">
         <div class="card-body p-3">
@@ -43,6 +44,7 @@
         </div>
       </div>
     </div>
+
     <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
       <div class="card">
         <div class="card-body p-3">
@@ -92,7 +94,7 @@
           <div class="col-6">
             <div class="card">
                 <div class="card-body">
-                  <div id="circle" style="margin-left:40%;"></div>
+                  <div id="circle" style="margin-left:40%;"> <span>70%</span> </div>
                   <div class="text-center">
                     <label for="">progres total anda : 70 %</label>
                   </div>
@@ -116,7 +118,7 @@
         <div class="col-6">
             <div class="card">
                 <div class="card-body">
-                  <div id="circle2" style="margin-left:40%;"></div>
+                  <div id="circle2" style="margin-left:40%;">  <span>35%</span>  </div>
                   <div class="text-center">
                     <label for="">progres total anda : 35 %</label>
                   </div>

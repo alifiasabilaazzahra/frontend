@@ -41,7 +41,7 @@
           <td style="border:none;"><b style="color:red;">Jumlah bimbingan anda kurang dari standar</b></td>
         </tr>
       </table>
-     <table class="table-responsive table-bordered"style="width: 100% !important;" id="table">
+     <table class=""style="width: 100% !important;" id="table">
       <thead style="border-bottom:2px solid #d9dce0;">
         <tr>
           <th>NO</th>

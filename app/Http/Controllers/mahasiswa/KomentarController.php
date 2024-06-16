@@ -12,8 +12,10 @@ class KomentarController extends Controller
      */
     public function index()
     {
-        $title = "Komentar Dosen";
-        return view('mahasiswa/komentar/index',compact('title'));
+        $section = "komentar";
+        $side_menu = 0;
+        $title = "Lihat Komentar Dosen";
+        return view('mahasiswa/komentar/index',compact('title','section','side_menu'));
     }
 
     /**

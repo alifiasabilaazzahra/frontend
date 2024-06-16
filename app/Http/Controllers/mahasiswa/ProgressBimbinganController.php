@@ -13,7 +13,9 @@ class ProgressBimbinganController extends Controller
     public function index()
     {
         $title = "Progress Bimbingan";
-        return view('mahasiswa/progress-bimbingan/index',compact('title'));
+        $side_menu = 2;
+        $section = "metlit";
+        return view('mahasiswa/progress-bimbingan/index',compact('title','side_menu','section'));
     }
 
     /**
