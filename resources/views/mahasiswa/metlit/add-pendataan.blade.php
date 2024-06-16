@@ -29,6 +29,33 @@
             <div class="form-group">
               <select name="" id="" class="form-control">
                 <option value="" >
+                  -- SELECT SEMESTER --
+                </option>
+                 <option value="">Ganjil</option>
+                 <option value="">Genap</option>
+              </select>
+
+            </div>
+          </td>
+        </tr>
+        <tr style="border:none; !important;">
+          <td style="border:none; width:25%;">
+            <b>Jumlah SKS Yang Ditempuh</b>
+          </td>
+          <td style="border:none; border:none; !important;">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Jumlah SKS Yang Ditempuh">
+            </div>
+          </td>
+        </tr>
+        <tr style="border:none; !important;">
+          <td style="border:none; width:25%;">
+            <b>Permintaan</b>
+          </td>
+          <td style="border:none; border:none; !important;">
+            <div class="form-group">
+              <select name="" id="" class="form-control">
+                <option value="" >
                   -- SELECT DATA --
                 </option>
               </select>

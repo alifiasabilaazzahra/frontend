@@ -101,12 +101,37 @@
 <!--   Core JS Files   -->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
-<script src="../assets/js/core/popper.min.js"></script>
-<script src="../assets/js/core/bootstrap.min.js"></script>
-<script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-<script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-<script src="../assets/js/plugins/chartjs.min.js"></script>
+<script src="{{ URL::asset('assets/js/core/popper.min.js') }}"></script>
+<script src="{{ URL::asset('assets/js/core/bootstrap.min.js') }}"></script>
+<script src="{{ URL::asset('assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
+<script src="{{ URL::asset('assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.js" integrity="sha512-8tHhvNIEwJiw6wQDCVob7hCrwfECKknmtZAdP8JdqZcQ6OEAf1aaErJAzTAL5tQYrcrJOhqS2P3laAuwk4+e5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+
+  $('#circle').circleProgress({
+    startAngle: 0.55,
+    value: 0.75,
+    size: 90,
+    fill: {
+      gradient: ["#6191B2"]
+    }
+    }).on('circle-animation-progress', function(event, progress, stepValue) {
+      $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+    });
+
+    $('#circle2').circleProgress({
+    startAngle: -3,
+    value: 0.35,
+    size: 90,
+    fill: {
+      gradient: ["#6191B2"]
+    }
+    }).on('circle-animation-progress', function(event, progress, stepValue) {
+      $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+    });
+
+
   let table = new DataTable('#table', {
       // config options...
   });

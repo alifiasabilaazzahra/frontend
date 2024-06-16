@@ -36,6 +36,33 @@
             </div>
           </td>
         </tr>
+            <tr style="border:none; !important;">
+          <td style="border:none; width:25%;">
+            <b>Semester</b>
+          </td>
+          <td style="border:none; border:none; !important;">
+            <div class="form-group">
+              <select name="" id="" class="form-control">
+                <option value="" >
+                  -- Pilih Semester --
+                </option>
+                 <option value="" >Ganjil</option>
+                 <option value="" >Genap</option>
+              </select>
+
+            </div>
+          </td>
+        </tr>
+            <tr style="border:none; !important;">
+          <td style="border:none; width:25%;">
+            <b>Jumlah SKS Yang Ditempuh</b>
+          </td>
+          <td style="border:none; border:none; !important;">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Jumlah SKS Yang Ditempuh">
+            </div>
+          </td>
+        </tr>
         <tr style="border:none; !important;">
           <td style="border:none; width:25%;">
             <b>Dosen Pembimbing 1</b>
@@ -113,7 +140,7 @@
       </table>
       <div style="float: right;">
         <button type="button" class="btn btn-danger">Close</button>
-        <button type="button" class="btn btn-info">Simpan</button>
+        <button type="button" class="btn btn-info">Ubah</button>
       </div>
     </form>    
   </div>

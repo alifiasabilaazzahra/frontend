@@ -13,9 +13,7 @@ use App\Http\Controllers\Mahasiswa\PendataanTugasAkhirController as PTAC;
 use App\Http\Controllers\Mahasiswa\ProgressAdministrasiTAController as PATAC;
 use App\Http\Controllers\Mahasiswa\ProgressBimbinganTAController as PBTAC;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[AuthController::class,"sign_in"]);
 
 
 Route::get('signup',[AuthController::class,"sign_up"])->name('signup');
