@@ -20,8 +20,10 @@ class VerifikasiController extends Controller
      */
     public function aktivasiakun()
     {
-        $title = "Aktivasi Akun";
-        return view('kaprodi/verifikasi/aktivasi-akun',compact('title'));
+        $title = "Aktivisi Akun";
+        $section = "aktivasi";
+        $side_menu = 1;
+        return view('kaprodi/verifikasi/aktivasi-akun',compact('title','section','side_menu'));
     }
 
     /**

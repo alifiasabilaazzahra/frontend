@@ -13,7 +13,9 @@ class VerifikasiMetlitController extends Controller
     public function index()
     {
         $title = "Verifikasi Metlit";
-        return view('kaprodi/verifikasi-metlit/index',compact('title'));
+        $section = "aktivasi";
+        $side_menu = 2;
+        return view('kaprodi/verifikasi-metlit/index',compact('title','section','side_menu'));
     }
 
     /**

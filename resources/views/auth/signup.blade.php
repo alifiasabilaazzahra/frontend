@@ -18,8 +18,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/bg/logo.png">
+  <link rel="icon" type="image/png" href="assets/bg/logo.png">
   <title>
     Soft UI Dashboard by Creative Tim
   </title>
@@ -112,7 +112,7 @@
                     </label>
                   </div>
                   <div class="text-center">
-                    <button type="button" class="btn bg-gradient-dark w-100 my-4 mb-2">Sign up</button>
+                  <button class="btn form-control" style="background-image: linear-gradient(to right, #A6D0DF 15%,#5385A9 99.9%); color:white; padding:10px; border-radius:10px; font-weight:bold;">SIGN IN</button>
                   </div>
                   <p class="text-sm mt-3 mb-0">Already have an account? <a href="javascript:;" class="text-dark font-weight-bolder">Sign in</a></p>
                 </form>

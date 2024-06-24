@@ -122,6 +122,7 @@ new Chart(a1, {
     datasets: [{
       borderColor: "#5082A7",
       backgroundColor: "#5082A7",
+      borderRadius: 5,
       label: 'Angkatan',
       data: [18, 19, 24, 20, 23, 24,20],
       borderWidth: 1
@@ -129,6 +130,7 @@ new Chart(a1, {
     ]
   },
   options: {
+    barThickness: 30,
     plugins: {
       title: {
           display: true,
@@ -171,6 +173,7 @@ new Chart(a1, {
       datasets: [{
         borderColor: "#5082A7",
         backgroundColor: "#5082A7",
+        borderRadius: 5,
         label: 'Angkatan',
         data: [18, 19, 24, 20, 23, 24,20],
         borderWidth: 1
@@ -178,6 +181,7 @@ new Chart(a1, {
       ]
     },
     options: {
+      barThickness: 30,
       plugins: {
         title: {
             display: true,
@@ -220,6 +224,7 @@ new Chart(c1, {
     datasets: [{
       borderColor: "red",
       backgroundColor: "red",
+      borderRadius: 5,
       label: 'Off track',
       data: [4, 2, 1, 10, 1, 1,1],
       borderWidth: 1
@@ -227,6 +232,7 @@ new Chart(c1, {
     {
       borderColor: "green",
       backgroundColor: "green",
+      borderRadius: 5,
       label: 'On Track',
       data: [18, 19, 24, 20, 23, 24,20],
       borderWidth: 1
@@ -273,6 +279,7 @@ new Chart(c1, {
       labels: ['2018','2019','2020','2021','2022','2023','2024'],
       datasets: [{
         borderColor: "red",
+        borderRadius: 5,
         backgroundColor: "red",
         label: 'Off track',
         data: [4, 2, 1, 10, 1, 1,1],
@@ -280,6 +287,7 @@ new Chart(c1, {
       },
       {
         borderColor: "green",
+        borderRadius: 5,
         backgroundColor: "green",
         label: 'On Track',
         data: [18, 19, 24, 20, 23, 24,20],
@@ -329,12 +337,14 @@ new Chart(c1, {
         borderColor: "#5082A7",
         backgroundColor: "#5082A7",
         label: 'Angkatan',
+        borderRadius: 5,
         data: [2, 5, 10, 11, 2, 1,8],
         borderWidth: 1
       },
       ]
     },
     options: {
+      barThickness: 30,
       plugins: {
         title: {
             display: true,

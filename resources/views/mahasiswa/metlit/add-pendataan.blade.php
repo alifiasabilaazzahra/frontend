@@ -23,7 +23,7 @@
         </tr>
         <tr style="border:none; !important;">
           <td style="border:none; width:25%;">
-            <b>Permintaan</b>
+            <b>Semester</b>
           </td>
           <td style="border:none; border:none; !important;">
             <div class="form-group">

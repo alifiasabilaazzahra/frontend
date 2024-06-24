@@ -86,6 +86,58 @@
     </div>
   </div>
 </div>
+{{-- DETAIL MODAL --}}
 
+<div class="modal fade" id="detailData" tabindex="-1" aria-labelledby="detailDataLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="detailDataLabel">Detail Data Pengajuan Tugas Akhir</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table style="border:none;">
+          <tr style="border:none;">
+            <td style="border:none;">Judul</td>
+            <td style="border:none;">Sistem Dashboard Untuk Program Studi</td>
+          </tr>
+           <tr style="border:none;">
+            <td style="border:none;">Peminatan</td>
+            <td style="border:none;">Enterprise Data Engineering (EDE)</td>
+          </tr>
+            <tr style="border:none;">
+            <td style="border:none;">Dosen Pembimbing 1</td>
+            <td style="border:none;">TTaufik Nur Adi</td>
+          </tr>
+          <tr style="border:none;">
+            <td style="border:none;">Dosen Pembimbing 2</td>
+            <td style="border:none;">Tien Fabrianti Kusumasari</td>
+          </tr>
+          <tr style="border:none;">
+            <td style="border:none;">Nama Mahasiswa</td>
+            <td style="border:none;">Zaidan Yahya</td>
+          </tr>
+          <tr style="border:none;">
+            <td style="border:none;">Nim Mahasiswa</td>
+            <td style="border:none;">1202228412</td>
+          </tr style="border:none;">
+          <tr style="border:none;">
+            <td style="border:none;">Nama Anggota</td>
+            <td style="border:none;">Ali Abideen</td>
+          </tr>
+          
+           <tr style="border:none;">
+            <td style="border:none;">Nim Anggota</td>
+            <td style="border:none;">34210908</td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
 @extends('kaprodi/template/script/verifikasi-TA')
 @extends('kaprodi/template/footer')

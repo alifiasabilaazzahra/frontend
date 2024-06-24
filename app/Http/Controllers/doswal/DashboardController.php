@@ -13,7 +13,8 @@ class DashboardController extends Controller
     public function index()
     {
         $title = "Dashboard";
-        return view('doswal/dashboard/index',compact('title'));
+        $section = "dashboard";
+        return view('doswal/dashboard/index',compact('title','section'));
     }
 
     /**

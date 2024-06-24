@@ -13,7 +13,8 @@ class KomentarmetlitController extends Controller
     public function index()
     {
         $title = "Lihat Progres Metlit";
-        return view('doswal/komentar-metlit/index',compact('title'));
+        $section = "komentar metlit";
+        return view('doswal/komentar-metlit/index',compact('title','section'));
     }
 
     /**

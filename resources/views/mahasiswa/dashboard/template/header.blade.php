@@ -93,6 +93,47 @@
         border:hidden;
     }
 
+
+    .mm{
+      padding-left:15px;
+    }
+
+    .activated{
+      background-color:white;
+    }
+
+    .activated .header-text{
+      font-weight: bold;
+      background-color:white;
+    }
+
+
+    .accord-button{
+      height:50px !important;
+    }
+
+    .activated .accord-button{
+      box-shadow: 0px 3px 10px 0px #888888 !important;
+    }
+    
+    .li-p{
+      padding-left:10px;
+    }
+
+    .selected-m{
+      color:white !important;
+      background-image: linear-gradient(to right, #5385A9 55%,#A6D0DF 99.9%);
+    }
+
+    .selected-m a{
+      color:white !important;
+    }
+    
+    .bg-whites{
+      background-color:black;
+    }
+    
+
     #circle span {
       font-size: 1rem;
       color: #8b8b8b;
@@ -129,7 +170,6 @@
       z-index: 1;
     }
     
-    
 
   </style>
 </head>
@@ -148,8 +188,8 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link  active" href="<?= route('mahasiswa.dashboard') ?>">
-            <div class="icon-shape icon-sm shadow border-radius-md button-blue text-center me-2 d-flex align-items-center justify-content-center">
-              <svg  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div class="icon-shape icon-sm shadow border-radius-md @if($section == 'dashboard') button-blue @else bg-white @endif text-center me-2 d-flex align-items-center justify-content-center">
+              <svg class="@if($section != 'dashboard') bg-whites @endif" width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>shop </title>
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -166,76 +206,90 @@
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link  " href="../pages/tables.html">
-            <div class="icon-shape icon-sm shadow border-radius-md button-blue text-center me-2 d-flex align-items-center justify-content-center">
-              <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>office</title>
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                    <g transform="translate(1716.000000, 291.000000)">
-                      <g id="office" transform="translate(153.000000, 2.000000)">
-                        <path class="color-background opacity-6" d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z"></path>
-                        <path class="color-background" d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z"></path>
+        <div class="accordion @if($section == 'metlit') activated @endif" id="metlit" style="margin-left:15px; width:220px; border-radius:10px;">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne"> 
+              <button class="accordion-button accord-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMetlit" aria-expanded="true" aria-controls="collapseMetlit">
+                <div class="icon-shape icon-sm shadow border-radius-md @if($section == 'metlit') button-blue @else bg-white @endif text-center me-2 d-flex align-items-center justify-content-center">
+                  <svg class="@if($section != 'metlit') bg-whites @endif" width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>office</title>
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <g transform="translate(1716.000000, 291.000000)">
+                          <g id="office" transform="translate(153.000000, 2.000000)">
+                            <path class="color-background opacity-6" d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z"></path>
+                            <path class="color-background" d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z"></path>
+                          </g>
+                        </g>
                       </g>
                     </g>
-                  </g>
-                </g>
-              </svg>
+                  </svg>
+                </div>
+                <span class="header-text">Metlit</span>
+              </button>
+            </h2>
+            <div id="collapseMetlit" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#metlit">
+              <div class="accordion-body">
+                <ul style="list-style-type: none; width:240px; margin-left:-40px;">
+                  <li class="li-p @if($side_menu == '1') selected-m  @endif" >
+                    <a href="<?= route('mahasiswa.pendataan.index') ?>">Pendataan</a>
+                  </li>
+                  <li class="li-p @if($side_menu == '2') selected-m  @endif">
+                    <a href="<?= route('mahasiswa.progres-bimbingan.index') ?>">Progress Bimbingan</a>
+                  </li>
+                  <li class="li-p @if($side_menu == '3') selected-m  @endif">
+                    <a href="<?= route('mahasiswa.progres-admin.index') ?>">Progress Administrasi</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <span class="nav-link-text ms-1 ">Metlit</span>
-          </a>
-          <div style="margin-left:50px; text-decoration:none; ">
-            <ul style="list-style-type: none;">
-              <li>
-                <a href="<?= route('mahasiswa.pendataan.index') ?>">Pendataan</a>
-              </li>
-              <li>
-                <a href="<?= route('mahasiswa.progres-bimbingan.index') ?>">Progress Bimbingan</a>
-              </li>
-              <li>
-                <a href="<?= route('mahasiswa.progres-admin.index') ?>">Progress Administrasi</a>
-              </li>
-            </ul>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  " href="../pages/tables.html">
-            <div class="icon-shape icon-sm shadow border-radius-md button-blue text-center me-2 d-flex align-items-center justify-content-center">
-              <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>office</title>
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                    <g transform="translate(1716.000000, 291.000000)">
-                      <g id="office" transform="translate(153.000000, 2.000000)">
-                        <path class="color-background opacity-6" d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z"></path>
-                        <path class="color-background" d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z"></path>
+        </div>
+
+        <div class="accordion @if($section == 'TA') activated @endif" id="TA" style="margin-left:15px; width:220px; border-radius:10px;">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button accord-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTA" aria-expanded="true" aria-controls="collapseTA">
+                <div class="icon-shape icon-sm shadow border-radius-md @if($section == 'TA') button-blue @else bg-white @endif text-center me-2 d-flex align-items-center justify-content-center">
+                  <svg class="@if($section != 'TA') bg-whites @endif" width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>office</title>
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <g transform="translate(1716.000000, 291.000000)">
+                          <g id="office" transform="translate(153.000000, 2.000000)">
+                            <path class="color-background opacity-6" d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z"></path>
+                            <path class="color-background" d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z"></path>
+                          </g>
+                        </g>
                       </g>
                     </g>
-                  </g>
-                </g>
-              </svg>
+                  </svg>
+                </div>
+                <span class="header-text">Tugas Akhir</span>
+              </button>
+            </h2>
+            <div id="collapseTA" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#TA">
+              <div class="accordion-body">
+                <ul style="list-style-type: none; width:240px; margin-left:-40px;">
+                  <li class=" li-p @if($side_menu == '4') selected-m  @endif" >
+                    <a href="<?= route('mahasiswa.ta-pendataan.index') ?>">Pendataan</a>
+                  </li>
+                  <li class=" li-p @if($side_menu == '5') selected-m  @endif" >
+                    <a href="<?= route('mahasiswa.ta-progress-bimbingan.index') ?>">Progress Bimbingan</a>
+                  </li>
+                  <li class=" li-p @if($side_menu == '6') selected-m  @endif" >
+                    <a href="<?= route('mahasiswa.ta-progres-admin.index') ?>">Progress Administrasi</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <span class="nav-link-text ms-1">Tugas Akhir</span>
-          </a>
-          <div style="margin-left:50px; text-decoration:none; ">
-            <ul style="list-style-type: none;">
-              <li>
-                <a href="<?= route('mahasiswa.ta-pendataan.index') ?>">Pendataan</a>
-              </li>
-              <li>
-                <a href="<?= route('mahasiswa.ta-progress-bimbingan.index') ?>">Progress Bimbingan</a>
-              </li>
-              <li>
-                <a href="<?= route('mahasiswa.ta-progres-admin.index') ?>">Progress Administrasi</a>
-              </li>
-            </ul>
           </div>
-        </li>
+        </div>
+        
          <li class="nav-item">
           <a class="nav-link" href="<?= route('mahasiswa.komentar.index') ?>">
-            <div class="icon-shape icon-sm shadow border-radius-md button-blue text-center me-2 d-flex align-items-center justify-content-center">
-              <svg  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div class="icon-shape icon-sm shadow border-radius-md @if($section == 'komentar') button-blue @else bg-white @endif text-center me-2 d-flex align-items-center justify-content-center">
+              <svg class="@if($section != 'komentar') bg-whites @endif" width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>shop </title>
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -276,7 +330,7 @@
             <span class="nav-link-text ms-1">Logout</span>
           </a>
         </li>
-  
+     
       </ul>
     </div>
   </aside>

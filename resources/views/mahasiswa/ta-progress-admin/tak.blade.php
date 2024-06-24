@@ -26,15 +26,21 @@
        </ul>
    </div>
   </div>
-  <div class="container" style="height:500px; background-color:#F8F9FA;"> 
-      <div class="container" style="display:flex;  justify-content: center; align-items: center; background-color:white; width:700px; height:400px; margin-top:40px;">
+  <div class="container" style="height:600px; background-color:#F8F9FA;"> 
+      <div class="container" style="display:flex;  justify-content: center; align-items: center; background-color:white; width:700px; height:500px; margin-top:40px;">
         <div class="text-center">
-          <h5>Input Dokumen Lengkap</h5>
-          <h5>(Ukuran Max 3 MB, Nama File Max 50 Karakter)</h5>
           <form action="">
-            <div class="form-group">
-              <input type="file" class="form-control" style="height:200px;">
+            <h5>Input Dokumen Lengkap</h5>
+            <h5>(Ukuran Max 3 MB, Nama File Max 50 Karakter)</h5>
+            <div class="form-group form-upload">
+              <div for="file-upload" class="custom-file-upload">
+                <div class="bg-blue">
+                  <i class="fa-solid fa-folder"></i>
+                </div>
+                Klik di sini untuk memilih berkas
+              </div>
             </div>
+            <input type="file" id="file-upload" class="form-control" style="height:200px;">
             <div class="form-group">
               <button class="btn btn-info form-control">Simpan</button>
             </div>

@@ -48,7 +48,7 @@
           <th>CATATAN</th>
           <th>TANGAL</th>
           <th>STATUS PEMBIMBING</th>
-          <th>#</th>
+          <th>BUKTI BIMBINGAN</th>
         </tr>
       </thead>
       <tbody>
@@ -58,7 +58,7 @@
           <td>01/03/2024</td>
           <td>Pembimbing</td>
           <td>
-            <input type="checkbox">
+            <button class="fa fa-square-check" style="color:green; border:none; background-color:white;"></button>
           </td>
         </tr>
       </tbody> 

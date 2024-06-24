@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,22 +85,24 @@
       margin-right: auto;
     }
 
+
   </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="view">
   <div class="left">
     <div class="content-left" style=" height:400px; width:400px;">
-      <h2 style="color:#74A3BF;">Login</h2>
-      <p>Enter your email and password to sign in</p>
+      <h2 style="color:#5082A7;">LOGIN</h2>
+      <p style="color:#67748E;">Enter your email and password to sign in</p>
       <div class="form-group">
-        <b for="" style="margin-bottom:20px;">Username</b>
+        <b for="" style="margin-bottom:20px;color:#344767; ">Username</b>
         <input style="margin-top:10px;" type="text" placeholder="Username" class="form-control">
       </div>
       <div class="form-group mt-4">
-        <b for="" style="margin-bottom:20px;">Password</b>
+        <b for="" style="margin-bottom:20px;color:#344767;">Password</b>
         <input style="margin-top:10px;" type="text" placeholder="Password" class="form-control">
       </div>
       <div class="form-check form-switch mt-2">
@@ -106,7 +110,7 @@
         <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
       </div>
       <div class="form-group mt-2">
-        <button class="btn form-control" style="background-image: linear-gradient(to right, #A6D0DF 15%,#5385A9 99.9%); color:white; padding:20px; font-weight:bold;">SIGN IN</button>
+        <button class="btn form-control" style="background-image: linear-gradient(to right, #A6D0DF 15%,#5385A9 99.9%); color:white; padding:10px; border-radius:10px; font-weight:bold;">SIGN IN</button>
       </div>
       <div class="form-group mt-2 text-center">
         Don't have an account? <b style="color:#74A3BF;">Sign up</b>

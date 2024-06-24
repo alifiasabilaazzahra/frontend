@@ -13,7 +13,8 @@ class KomentarTAController extends Controller
     public function index()
     {
         $title = "Lihat Progres TA";
-        return view('doswal/komentar-ta/index',compact('title'));
+        $section = "komentar ta";
+        return view('doswal/komentar-ta/index',compact('title','section'));
     }
 
     /**

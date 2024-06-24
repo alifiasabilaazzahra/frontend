@@ -93,6 +93,40 @@
         border:hidden;
     }
 
+    .activated{
+      background-color:white;
+    }
+
+    .activated .header-text{
+      font-weight: bold;
+      background-color:white;
+    }
+
+
+    .accord-button{
+      height:50px !important;
+    }
+
+    .activated .accord-button{
+      box-shadow: 0px 3px 10px 0px #888888 !important;
+    }
+    
+    .li-p{
+      padding-left:10px;
+    }
+
+    .selected-m{
+      color:white !important;
+      background-image: linear-gradient(to right, #5385A9 55%,#A6D0DF 99.9%);
+    }
+
+    .selected-m a{
+      color:white !important;
+    }
+    
+    .bg-whites{
+      background-color:black;
+    }
 
     
     
@@ -114,7 +148,7 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link  active" href="<?= route('doswal.dashboard') ?>">
-            <div class="icon-shape icon-sm shadow border-radius-md button-blue text-center me-2 d-flex align-items-center justify-content-center">
+            <div class="icon-shape icon-sm shadow border-radius-md @if($section == 'dashboard') button-blue @else bg-white @endif text-center me-2 d-flex align-items-center justify-content-center">
               <svg  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>shop </title>
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -134,8 +168,8 @@
         </li>
            <li class="nav-item">
           <a class="nav-link" href="<?= route('doswal.komentarmetlit.index') ?>">
-            <div class="icon-shape icon-sm shadow border-radius-md button-blue text-center me-2 d-flex align-items-center justify-content-center">
-              <svg  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div class="icon-shape icon-sm shadow border-radius-md @if($section == 'metlit') button-blue @else bg-white @endif text-center me-2 d-flex align-items-center justify-content-center">
+              <svg class="@if($section != 'metlit') bg-whites @endif"  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>shop </title>
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -154,8 +188,8 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= route('doswal.komentarTA.index') ?>">
-            <div class="icon-shape icon-sm shadow border-radius-md button-blue text-center me-2 d-flex align-items-center justify-content-center">
-              <svg  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div class="icon-shape icon-sm shadow border-radius-md @if($section == 'ta') button-blue @else bg-white @endif text-center me-2 d-flex align-items-center justify-content-center">
+              <svg class="@if($section != 'ta') bg-whites @endif"  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>shop </title>
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -174,8 +208,8 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= route('doswal.UndurDiri.index') ?>">
-            <div class="icon-shape icon-sm shadow border-radius-md button-blue text-center me-2 d-flex align-items-center justify-content-center">
-              <svg  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div class="icon-shape icon-sm shadow border-radius-md @if($section == 'ta') button-blue @else bg-white @endif text-center me-2 d-flex align-items-center justify-content-center">
+              <svg class="@if($section != 'ta') bg-whites @endif"  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>shop </title>
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -199,8 +233,8 @@
         
         <li class="nav-item">
           <a class="nav-link  " href="../pages/sign-in.html">
-            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-              <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div class="icon-shape icon-sm shadow border-radius-md @if($section == 'undurdiri') button-blue @else bg-white @endif text-center me-2 d-flex align-items-center justify-content-center">
+              <svg class="@if($section != 'undurdiri') bg-whites @endif"  width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>document</title>
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF" fill-rule="nonzero">

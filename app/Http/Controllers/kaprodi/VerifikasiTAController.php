@@ -13,7 +13,10 @@ class VerifikasiTAController extends Controller
     public function index()
     {
         $title = "Verifikasi Tugas Akhir";
-        return view('kaprodi/verifikasi-TA/index',compact('title'));
+        $section = "aktivasi";
+        $side_menu = 3;
+        return view('kaprodi/verifikasi-TA/index',compact('title','section','side_menu'));
+       
     }
 
     /**

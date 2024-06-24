@@ -62,5 +62,50 @@
   </div>
 
 </div>
+{{-- DETAIL MODAL --}}
+
+<div class="modal fade" id="detailData" tabindex="-1" aria-labelledby="detailDataLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="detailDataLabel">Detail Undur Diri</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table style="border:none;">
+          <tr style="border:none;">
+            <td style="border:none;">Tanggal</td>
+            <td style="border:none;">20/04/2024</td>
+          </tr>
+          <tr style="border:none;">
+            <td style="border:none;">Nama Mahasiswa</td>
+            <td style="border:none;">Mitty Zaskia</td>
+          </tr style="border:none;">
+          <tr style="border:none;">
+            <td style="border:none;">Nim</td>
+            <td style="border:none;">2023345678</td>
+          </tr>
+          <tr style="border:none;">
+            <td style="border:none;">Kelas</td>
+            <td style="border:none;">SIX-46-01</td>
+          </tr>
+           <tr style="border:none;">
+            <td style="border:none;">Dosen Wali</td>
+            <td style="border:none;">Taufik Nur Adi</td>
+          </tr>
+           <tr style="border:none;">
+            <td style="border:none;">Alasan Undur Diri</td>
+            <td style="border:none;">Faktor Ekonomi</td>
+          </tr>
+           
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
 @extends('doswal/template/script/undurdiri')
 @extends('doswal/template/footer')

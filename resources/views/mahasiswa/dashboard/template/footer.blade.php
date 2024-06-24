@@ -121,7 +121,7 @@
     });
 
     $('#circle2').circleProgress({
-    startAngle: -3,
+    startAngle: -3.4,
     value: 0.35,
     size: 90,
     fill: {

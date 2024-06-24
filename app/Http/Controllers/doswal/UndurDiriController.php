@@ -13,7 +13,8 @@ class UndurDiriController extends Controller
     public function index()
     {
         $title = "Undur Diri";
-        return view('doswal/undur-diri/index',compact('title'));
+        $section = "undur diri";
+        return view('doswal/undur-diri/index',compact('title','section'));
     }
 
     /**

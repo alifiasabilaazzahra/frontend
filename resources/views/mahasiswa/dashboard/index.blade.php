@@ -1,4 +1,4 @@
-@include('mahasiswa/dashboard/template/header');
+@include('mahasiswa/dashboard/template/header')
 
 <div class="row" style="margin-bottom:100%;">
     <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">

@@ -12,8 +12,10 @@ class Dashboard extends Controller
      */
     public function index()
     {   
+        $section = "dashboard";
+        $side_menu = 0;
         $title = "Dashboard";
-        return view('mahasiswa/dashboard/index',compact('title'));
+        return view('mahasiswa/dashboard/index',compact('title','section','side_menu'));
        
     }
 

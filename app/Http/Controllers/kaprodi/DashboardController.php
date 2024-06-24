@@ -13,7 +13,8 @@ class DashboardController extends Controller
     public function index()
     {
         $title = "Dashboard";
-        return view('kaprodi/dashboard/index',compact('title'));
+        $section = "dashboard";
+        return view('kaprodi/dashboard/index',compact('title','section'));
     }
 
     /**

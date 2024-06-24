@@ -12,8 +12,11 @@ class UndurdiriController extends Controller
      */
     public function index()
     {
+        $section = "Undur Diri";
+        $side_menu = 0;
         $title = "Undur Diri";
-        return view('kaprodi/undurdiri/undurdiri',compact('title'));
+        return view('kaprodi/undurdiri/undurdiri',compact('title','section','side_menu'));
+       
     }
 
     /**

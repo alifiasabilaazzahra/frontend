@@ -92,6 +92,9 @@
   });
 </script>
 <script>
+$('.form-upload').on('click',function(){
+  $('#file-upload').click();
+});
 var win = navigator.platform.indexOf('Win') > -1;
 if (win && document.querySelector('#sidenav-scrollbar')) {
   var options = {
